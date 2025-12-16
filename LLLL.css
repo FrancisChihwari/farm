@@ -3,7 +3,7 @@
 ========================= */
 :root {
     --primary: #16a34a;
-    --secondary: #1e508a;
+    --secondary: #ffffff;
     --dark-bg: #0f172a;
     --glass-bg: rgba(255, 255, 255, 0.08);
     --card-bg: rgba(255, 255, 255, 0.12);
@@ -41,7 +41,7 @@ body {
    SIDEBAR
 ========================= */
 .sidebar-container {
-    background: linear-gradient(180deg, var(--secondary), #f5f5f5);
+    background: linear-gradient(180deg, var(--secondary), #ffffff);
     height: 100%;
     border-radius: var(--radius);
     padding: 25px;
