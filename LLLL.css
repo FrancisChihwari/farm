@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL RESET & VARIABLES
-========================= */
+/*  GLOBAL RESET & VARIABLES */
 :root {
     --primary: #ffffff;
     --secondary: #ffffff;
@@ -26,9 +24,7 @@ body {
     color: var(--text-light);
 }
 
-/* =========================
-   MAIN CONTAINER
-========================= */
+/*  MAIN CONTAINER */
 .product-container {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -37,9 +33,7 @@ body {
      margin-left: 0;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+/* SIDEBAR */
 .sidebar-container {
     background: linear-gradient(180deg, var(--secondary), #ffffff);
     height: 100%;
@@ -77,9 +71,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* =========================
-   PRODUCT SECTION GRID
-========================= */
+/* PRODUCT SECTION GRID */
 .product-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -91,9 +83,7 @@ body {
     border: 1px solid var(--border);
 }
 
-/* =========================
-   WELCOME / HERO CARD
-========================= */
+/* WELCOME / HERO CARD */
 .welcome-message {
     grid-column: 1 / -1;
     background: linear-gradient(135deg, #1d4ed8, #2563eb);
@@ -112,9 +102,7 @@ body {
     color: #e0e7ff;
 }
 
-/* =========================
-   PRODUCT CARDS
-========================= */
+/* PRODUCT CARDS */
 .rol-column {
     background: linear-gradient(160deg, var(--primary), #22c55e);
     height: 480px;
@@ -145,9 +133,7 @@ body {
     object-fit: contain;
 }
 
-/* =========================
-   SHOP CONTAINER
-========================= */
+/* SHOP CONTAINER */
 .shop-container {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
@@ -161,18 +147,14 @@ body {
     margin-bottom: 15px;
 }
 
-/* =========================
-   GIFT GRID
-========================= */
+/* GIFT GRID */
 .gift-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-/* =========================
-   GIFT CARD
-========================= */
+/* GIFT CARD */
 .gift-card p {
     margin-top: 8px;
     font-size: 14px;
@@ -180,9 +162,7 @@ body {
     color: var(--text-muted);
 }
 
-/* =========================
-   GIFT IMAGE
-========================= */
+/*  GIFT IMAGE */
 .gift-image {
     
     border-radius: 16px;
@@ -218,9 +198,7 @@ body {
     height: 600;
     position: relative;
 }
-/* =========================
-   LINK
-========================= */
+/* LINK*/
 .discover-link {
     display: inline-block;
     margin-top: 15px;
@@ -363,3 +341,111 @@ body {
     background:#f1f5f9;
     padding:40px
 }
+
+
+/* LARGE TABLETS & SMALL LAPTOPS */
+@media (max-width: 1200px) {
+  .product-container {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  .sidebar-container a {
+    margin: 8px;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+/*  MOBILE DEVICES */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .product-container {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .sidebar-container {
+    padding: 15px;
+    border-radius: 0;
+  }
+
+  .sidebar-container h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-card {
+    padding: 14px;
+  }
+
+  .product-image img {
+    height: 160px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .product-title {
+    font-size: 14px;
+  }
+
+  .add-btn {
+    top: 180px;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .sidebar-container a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-image img {
+    height: 140px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .badge {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
