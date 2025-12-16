@@ -2,7 +2,7 @@
    GLOBAL RESET & VARIABLES
 ========================= */
 :root {
-    --primary: #16a34a;
+    --primary: #ffffff;
     --secondary: #ffffff;
     --dark-bg: #0f172a;
     --glass-bg: rgba(255, 255, 255, 0.08);
