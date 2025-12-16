@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm Products</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="LLLL.css">
+</head>
+
+<body class="product-class">
+
+<div class="product-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar-container">
+    <h3>Categories</h3>
+    <a href="products.html">Go back home</a>
+    <a>Livestock & Animal Products</a>
+    <a>Fruits and Orchards</a>
+    <a>Grains and Field Crops</a>
+    <a>Garden and Nursery Plants</a>
+    <a>Value Added Products</a>
+  </aside>
+
+  <!-- PRODUCTS GRID -->
+  <div class="products" id="products">
+
+    <!-- TOMATOES (FEATURED) -->
+    <div class="product-card featured" data-name="Tomatoes" data-price="2.50">
+      <div class="ribbon">BEST SELLER</div>
+
+      <div class="product-image">
+        <img src="images/main farm/tomatoess (2).jpg" alt="Tomatoes">
+      </div>
+
+      <div class="badge">
+        <div class="discount">30% off</div>
+        <div class="deal">Harvest Special</div>
+      </div>
+
+      <div class="price">$2.50 <span>$3.60</span> <small>per kg</small></div>
+      <div class="product-title">Fresh Organic Tomatoes – Juicy & Vine-Ripened</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- CARROTS -->
+    <div class="product-card" data-name="Carrots" data-price="1.80">
+      <div class="product-image">
+        <img src="images/main farm/carrotss.jpg" alt="Carrots">
+      </div>
+
+      <div class="price">$1.80 <span>$2.40</span> <small>per kg</small></div>
+      <div class="product-title">Sweet Crunchy Carrots – Fresh from the Soil</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- POTATOES -->
+    <div class="product-card" data-name="Potatoes" data-price="4.50">
+      <div class="product-image">
+        <img src="images/main farm/potatoess.jpg" alt="Potatoes">
+      </div>
+
+      <div class="price">$4.50 <span>$6.00</span> <small>5kg pocket</small></div>
+      <div class="product-title">Premium Potatoes – Cooking & Frying</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- CUCUMBER -->
+    <div class="product-card" data-name="Cucumber" data-price="1.50">
+      <div class="product-image">
+        <img src="images/main farm/cucumberr.jpg" alt="Cucumber">
+      </div>
+
+      <div class="price">$1.50 <span>$2.20</span> <small>per kg</small></div>
+      <div class="product-title">Fresh Cucumbers – Crisp & Cool</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- SPINACH -->
+    <div class="product-card" data-name="Spinach" data-price="1.50">
+      <div class="product-image">
+        <img src="images/main farm/spinachh.jpg" alt="Spinach">
+      </div>
+
+      <div class="price">$1.50 <span>$2.20</span> <small>per bundle</small></div>
+      <div class="product-title">Fresh Spinach – Iron Rich</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- CABBAGE -->
+    <div class="product-card" data-name="Cabbage" data-price="1.90">
+      <div class="product-image">
+        <img src="images/main farm/Cabbage.jpg" alt="Cabbage">
+      </div>
+
+      <div class="price">$1.90 <span>$2.70</span> <small>per head</small></div>
+      <div class="product-title">Crisp Green Cabbage – Fresh & Full</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- ONION -->
+    <div class="product-card" data-name="King Onion" data-price="2.40">
+      <div class="product-image">
+        <img src="images/main farm/King onion.jpg" alt="Onions">
+      </div>
+
+      <div class="price">$2.40 <span>$3.20</span> <small>per kg</small></div>
+      <div class="product-title">King Onions – Strong Flavor</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- PUMPKIN -->
+    <div class="product-card" data-name="Pumpkin" data-price="5.00">
+      <div class="product-image">
+        <img src="images/main farm/pumpkin.jpg" alt="Pumpkin">
+      </div>
+
+      <div class="price">$5.00 <span>$6.80</span> <small>each</small></div>
+      <div class="product-title">Farm Pumpkin – Perfect for Stews</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- BUTTERNUT -->
+    <div class="product-card" data-name="Butternut" data-price="4.20">
+      <div class="product-image">
+        <img src="images/main farm/butternut.jpg" alt="Butternut">
+      </div>
+
+      <div class="price">$4.20 <span>$5.80</span> <small>each</small></div>
+      <div class="product-title">Sweet Butternut – Creamy & Delicious</div>
+
+      <div class="cart-controls">
+        <button onclick="qty(this,-1)">−</button>
+        <span class="qty">1</span>
+        <button onclick="qty(this,1)">+</button>
+        <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-name="Beetroot" data-price="2.20">
+  <div class="product-image">
+    <img src="images/main farm/betroott.jpg" alt="Beetroot">
+  </div>
+
+  <div class="price">$2.20 <span>$3.00</span> <small>per kg</small></div>
+  <div class="product-title">Fresh Beetroot – Naturally Sweet & Earthy</div>
+
+  <div class="cart-controls">
+    <button onclick="qty(this,-1)">−</button>
+    <span class="qty">1</span>
+    <button onclick="qty(this,1)">+</button>
+    <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card" data-name="Pepper" data-price="3.20">
+  <div class="product-image">
+    <img src="images/main farm/pepper.jpg" alt="Pepper">
+  </div>
+
+  <div class="price">$3.20 <span>$4.20</span> <small>per kg</small></div>
+  <div class="product-title">Fresh Peppers – Sweet & Vitamin Rich</div>
+
+  <div class="cart-controls">
+    <button onclick="qty(this,-1)">−</button>
+    <span class="qty">1</span>
+    <button onclick="qty(this,1)">+</button>
+    <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card" data-name="Beetroot" data-price="2.20">
+  <div class="product-image">
+    <img src="images/main farm/betroott.jpg" alt="Beetroot">
+  </div>
+
+  <div class="price">$2.20 <span>$3.00</span> <small>per kg</small></div>
+  <div class="product-title">Fresh Beetroot – Naturally Sweet & Earthy</div>
+
+  <div class="cart-controls">
+    <button onclick="qty(this,-1)">−</button>
+    <span class="qty">1</span>
+    <button onclick="qty(this,1)">+</button>
+    <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card" data-name="Green Beans" data-price="2.80">
+  <div class="product-image">
+    <img src="images/main farm/green beans.jpg" alt="Green Beans">
+  </div>
+
+  <div class="price">$2.80 <span>$3.60</span> <small>per kg</small></div>
+  <div class="product-title">Tender Green Beans – Hand-Picked Fresh</div>
+
+  <div class="cart-controls">
+    <button onclick="qty(this,-1)">−</button>
+    <span class="qty">1</span>
+    <button onclick="qty(this,1)">+</button>
+    <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+  </div>
+</div>
+
+
+  </div><!-- /products -->
+
+</div><!-- /product-container -->
+
+<!-- JAVASCRIPT -->
+<script src="scripts.js"></script>
+
+</body>
+</html>
