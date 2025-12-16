@@ -361,13 +361,13 @@ body {
     display: inline-block;
     margin-top: 15px;
     font-size: 16px;
-    color: #e0f2fe;
+    color: black;
     text-decoration: none;
     transition: var(--transition);
 }
 
 .discover-link:hover {
-    color: white;
+    color: black;
     letter-spacing: 0.5px;
 }
 
