@@ -524,3 +524,172 @@ img {
     text-decoration: underline;
 }
 
+/* =========================
+   RESPONSIVE – TABLETS
+   (max-width: 992px)
+========================= */
+@media (max-width: 992px) {
+
+  /* Navigation */
+  nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  /* Hero Text */
+  .text h1 {
+    font-size: 2.5rem;
+  }
+
+  .text h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Products Grid */
+  .our-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-items img {
+    height: 380px;
+  }
+
+  /* Blog Layout */
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Shop Layout */
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-container {
+    height: auto;
+  }
+
+  .product-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .welcome-message {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================
+   RESPONSIVE – MOBILE
+   (max-width: 768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* Header Banner */
+  .notice-banner {
+    height: auto;
+  }
+
+  /* Navigation */
+  nav {
+    top: 40px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hero Section */
+  .welcome {
+    height: 450px;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text h3 {
+    font-size: 1.2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  /* Products */
+  .our-products {
+    grid-template-columns: 1fr;
+  }
+
+  .product-items img {
+    height: 300px;
+  }
+
+  /* Product Shop */
+  .product-section {
+    grid-template-columns: 1fr;
+  }
+
+  .rol-column {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Gift Section */
+  .gift-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Slideshow */
+  .slideshow-container {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+   (max-width: 480px)
+========================= */
+@media (max-width: 480px) {
+
+  /* Global Text */
+  body {
+    font-size: 14px;
+  }
+
+  /* Hero */
+  .text h1 {
+    font-size: 1.6rem;
+  }
+
+  .text h3 {
+    font-size: 1rem;
+  }
+
+  /* Buttons */
+  .cta {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  /* Sidebar Buttons */
+  .sidebar-container button {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* Price Cards / Products */
+  .product-title,
+  .rol-column h1 {
+    font-size: 18px;
+  }
+
+  /* Blog Cards */
+  .top-news-container .row-column,
+  .related-news-container .row-column,
+  .main-news-container {
+    margin: 10px 0;
+  }
+}
+
