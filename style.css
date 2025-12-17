@@ -524,10 +524,7 @@ img {
     text-decoration: underline;
 }
 
-/* =========================
-   RESPONSIVE – TABLETS
-   (max-width: 992px)
-========================= */
+/* RESPONSIVE – TABLETS (max-width: 992px) */
 @media (max-width: 992px) {
 
   /* Navigation */
@@ -578,10 +575,7 @@ img {
   }
 }
 
-/* =========================
-   RESPONSIVE – MOBILE
-   (max-width: 768px)
-========================= */
+/* RESPONSIVE – MOBILE (max-width: 768px) */
 @media (max-width: 768px) {
 
   /* Header Banner */
@@ -647,10 +641,7 @@ img {
   }
 }
 
-/* =========================
-   SMALL PHONES
-   (max-width: 480px)
-========================= */
+/* SMALL PHONES (max-width: 480px) */
 @media (max-width: 480px) {
 
   /* Global Text */
