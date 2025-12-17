@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL RESET & VARIABLES
-========================= */
+/* GLOBAL RESET & VARIABLES */
 :root {
     /* Brand */
     --primary: #16a34a;
@@ -34,9 +32,7 @@ body {
     color: var(--text-dark);
 }
 
-/* =========================
-   MAIN CONTAINER
-========================= */
+/*MAIN CONTAINER*/
 .product-container {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -44,9 +40,7 @@ body {
     padding: 20px;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+/* SIDEBAR */
 .sidebar-container {
     background: linear-gradient(180deg, #16a34a, #15803d);
     border-radius: var(--radius);
@@ -79,18 +73,14 @@ body {
     transform: translateY(-2px);
 }
 
-/* =========================
-   PRODUCT GRID
-========================= */
+/* PRODUCT GRID*/
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 25px;
 }
 
-/* =========================
-   PRODUCT CARD
-========================= */
+/* PRODUCT CARD */
 .product-card {
     background: var(--card-bg);
     border-radius: var(--radius);
@@ -105,9 +95,7 @@ body {
     box-shadow: 0 20px 35px rgba(0,0,0,0.12);
 }
 
-/* =========================
-   PRODUCT IMAGE
-========================= */
+/* PRODUCT IMAGE*/
 .product-image {
     background: var(--light-bg);
     border-radius: 14px;
@@ -123,9 +111,7 @@ body {
     object-fit: contain;
 }
 
-/* =========================
-   ADD BUTTON
-========================= */
+/* ADD BUTTON */
 .add-btn {
     position: absolute;
     right: 20px;
@@ -144,9 +130,7 @@ body {
     box-shadow: 0 8px 18px rgba(0,0,0,0.25);
 }
 
-/* =========================
-   BADGES
-========================= */
+/* BADGES */
 .badge {
     display: flex;
     gap: 10px;
@@ -168,9 +152,7 @@ body {
     font-weight: 600;
 }
 
-/* =========================
-   PRICE
-========================= */
+/* PRICE */
 .price {
     margin: 12px 0 6px;
     font-size: 22px;
@@ -190,9 +172,7 @@ body {
     color: var(--text-muted);
 }
 
-/* =========================
-   PRODUCT TITLE
-========================= */
+/* PRODUCT TITLE */
 .product-title {
     font-size: 15px;
     font-weight: 600;
@@ -200,9 +180,7 @@ body {
     color: var(--text-dark);
 }
 
-/* =========================
-   LINK
-========================= */
+/* LINK */
 .shop-link {
     display: inline-block;
     margin-top: 10px;
@@ -227,9 +205,7 @@ body {
     border: 1px solid var(--border);
 }
 
-/* =========================
-   WELCOME / HERO CARD
-========================= */
+/* WELCOME */
 .welcome-message {
     grid-column: 1 / -1;
     background: linear-gradient(135deg, #1d4ed8, #2563eb);
@@ -248,9 +224,8 @@ body {
     color: #e0e7ff;
 }
 
-/* =========================
-   PRODUCT CARDS
-========================= */
+/* PRODUCT CARDS
+ */
 .rol-column {
     background: linear-gradient(160deg, var(--primary), #22c55e);
     height: 480px;
@@ -281,9 +256,7 @@ body {
     object-fit: contain;
 }
 
-/* =========================
-   SHOP CONTAINER
-========================= */
+/*  SHOP CONTAINER */
 .shop-container {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
@@ -297,18 +270,14 @@ body {
     margin-bottom: 15px;
 }
 
-/* =========================
-   GIFT GRID
-========================= */
+/* GIFT GRID */
 .gift-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-/* =========================
-   GIFT CARD
-========================= */
+/* GIFT CARD */
 .gift-card p {
     margin-top: 8px;
     font-size: 14px;
@@ -316,9 +285,7 @@ body {
     color: var(--text-muted);
 }
 
-/* =========================
-   GIFT IMAGE
-========================= */
+/* GIFT IMAGE */
 .gift-image {
     
     border-radius: 16px;
@@ -354,9 +321,7 @@ body {
     height: 600;
     position: relative;
 }
-/* =========================
-   LINK
-========================= */
+/* LINK */
 .discover-link {
     display: inline-block;
     margin-top: 15px;
@@ -373,9 +338,7 @@ body {
 
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 /* Tablets */
 @media (max-width: 992px) {
